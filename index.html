@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        .divBT1{
+            background-color: rgb(180 241 180);
+            font-weight: 700;
+            border-radius: 10px;
+            width: 45%;
+            text-align: center;
+            padding: 10px;
+            margin-left: 355px;
+            margin-top: 30px;
+        }
+        .divBT2{
+            background-color: rgb(180 241 180);
+            font-weight: 700;
+            border-radius: 10px;
+            width: 45%;
+            text-align: center;
+            padding: 10px;
+            margin-left: 355px;
+            margin-top: 30px;
+        }
+        .divBT3{
+            background-color: rgb(180 241 180);
+            font-weight: 700;
+            border-radius: 10px;
+            width: 45%;
+            text-align: center;
+            padding: 10px;
+            margin-left: 355px;
+            margin-top: 30px;
+        }
+        .divBT4{
+            background-color: rgb(180 241 180);
+            font-weight: 700;
+            border-radius: 10px;
+            width: 45%;
+            text-align: center;
+            padding: 10px;
+            margin-left: 355px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="row g-3 ">
+      <h1 class="text-center">Quản Lý Tuyển Sinh</h1>
+        <div class="container d-flex justify-content-center mt-5 gap-5">
+            <div class="col-md-2 ">
+                <label for="Score_" class="form-label">Điểm chuẩn</label>
+                <input type="text" class="form-control" id="Score_">
+              </div>
+              <div class="col-md-2">
+                  <label for="Choose_Area" class="form-label">Chọn khu vực</label>
+                  <select id="Choose_Area" class="form-select">
+                    <option value="0" selected>Chọn khu vực</option>
+                    <option value="2">khu vực A</option>
+                    <option value="1">khu vực B</option>
+                    <option value="0.5">khu vực C</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <label for="Choose_Obj" class="form-label">Chọn đối tượng</label>
+                  <select id="Choose_Obj" class="form-select">
+                    <option value="0" selected>Chọn đối tượng</option>
+                    <option value="2.5">1</option>
+                    <option value="1.5">2</option>
+                    <option value="1">3</option>
+                  </select>
+                </div>
+        </div>
+        
+          <div class="container_Score d-flex justify-content-center mt-5 gap-5">
+            <div class="col-md-2">
+                <label for="Score_First" class="form-label">Điểm môn thứ 1</label>
+                <input type="text" class="form-control" id="Score_First">
+              </div>
+              <div class="col-md-2">
+                <label for="Score_second" class="form-label">Điểm môn thứ 2</label>
+                <input type="text" class="form-control" id="Score_second">
+              </div>
+              <div class="col-md-2">
+                <label for="Score_third" class="form-label">Điểm môn thứ 3</label>
+                <input type="text" class="form-control" id="Score_third">
+              </div>
+          </div>
+          
+        
+         
+        <div style=" margin-left: 1250px;margin-top: 50px; " class="col-12">
+          <button id ="Result_BT1" type="button" class="btn btn-primary">Kết Quả</button>
+        </div>
+       
+      </form>
+      <div id="divBT1"></div>
+
+      <hr>
+
+      <form class="row g-3 ">
+        <h1 class="text-center">Tính Tiền Điện</h1>
+      
+          
+            <div class="container_Score d-flex justify-content-center mt-5 gap-5">
+              <div class="col-md-2">
+                  <label for="FullName" class="form-label">Nhập họ tên</label>
+                  <input type="text" class="form-control" id="FullName">
+                </div>
+                <div class="col-md-2">
+                  <label for="Num_Kw" class="form-label">Nhập số KW</label>
+                  <input type="text" class="form-control" id="Num_Kw">
+                </div>            
+            </div>         
+          <div style=" margin-left: 1050px;margin-top: 50px; " class="col-12">
+            <button id ="Result_BT2" type="button" class="btn btn-primary">Tính tiền điện</button>
+          </div>
+          
+        </form>
+        <div id="divBT2"></div>
+
+        <hr>
+
+        <form class="row g-3 ">
+          <h1 class="text-center">Tính Thuế Thu Nhập Cá Nhân</h1>
+        
+            
+              <div class="container_Score d-flex justify-content-center mt-5 gap-5">
+                <div class="col-md-2">
+                    <label for="FullName" class="form-label">Nhập họ tên</label>
+                    <input type="text" class="form-control" id="FullName1">
+                  </div>
+                  <div class="col-md-2">
+                    <label for="Sum_Income" class="form-label">Tổng thu nhập năm</label>
+                    <input type="text" class="form-control" id="Sum_Income">
+                  </div>      
+                  <div class="col-md-2">
+                    <label for="Num_People" class="form-label">Số người phụ thuộc</label>
+                    <input type="text" class="form-control" id="Num_People">
+                  </div>         
+              </div>         
+            <div style=" margin-left: 1050px; margin-top: 50px; " class="col-12">
+              <button id ="Result_BT3" type="button" class="btn btn-primary">Tính tiền thuế</button>
+            </div>
+            
+          </form>
+          <div id="divBT3"></div>
+        
+
+
+          <hr>
+
+          <form style="padding-bottom: 100px;" class="row g-3 ">
+            <h1 class="text-center">Tính Tiền Cáp</h1>
+          
+              
+                <div class="container_Score d-flex justify-content-center mt-5 gap-5">
+                  <div class="col-md-2">
+                    <label for="Choose_Client" class="form-label">Chọn khách hàng</label>
+                    <select id="Choose_Client" onchange="onchangeClient()" class="form-select">
+                      <option value="0" selected>Chọn khách hàng</option>
+                      <option value="1">Nhà dân</option>
+                      <option value="2" >Doanh nghiệp</option>
+                  
+                    </select>
+                  </div>
+                    <div class="col-md-2">
+                      <label for="Id_Client" class="form-label">Nhập mã khách hàng</label>
+                      <input type="text" class="form-control" id="Id_Client">
+                    </div>      
+                    <div class="col-md-2">
+                      <label for="Premium_Channel" class="form-label">Số kênh cao cấp</label>
+                      <input type="text" class="form-control" id="Premium_Channel">
+                    </div>      
+                       
+                </div>    
+                <div style="margin-left:330px; display:none ;" class="col-md-2" id="conn">
+                  <label for="Num_Connect" class="form-label">Số kết nối</label>
+                  <input type="text" class="form-control" id="Num_Connect">
+                </div>       
+              <div style=" margin-left: 1050px; margin-top: 50px;" class="col-12">
+                <button id ="Result_BT4" type="button" class="btn btn-primary">Tính tiền cáp</button>
+              </div>
+              
+            </form>
+            <div id="divBT4"></div>
+
+      
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script src="./Js/index.js"></script>
+</body>
+
+</html>
+
+
